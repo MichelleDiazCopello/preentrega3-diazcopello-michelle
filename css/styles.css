@@ -331,6 +331,71 @@ header section img {
     width: 50vw;
   }
 }
+/* Servicios Main */
+.serviciosmain {
+  display: grid;
+}
+.serviciosmain section ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.serviciosmain section ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin: 15px 0;
+}
+.serviciosmain section ul li div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.serviciosmain section ul li div p {
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+/* Medias Queries Servicios Main */
+@media (min-width: 768px) {
+  .serviciosmain {
+    display: flex;
+    flex-direction: column;
+  }
+  .serviciosmain section {
+    display: flex;
+    flex-direction: column;
+  }
+  .serviciosmain section ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .serviciosmain section ul li div {
+    height: 100%;
+  }
+}
+/* Grid Areas Servicios Main*/
+.sala-juegos-infantiles {
+  grid-area: sala-juegos;
+}
+
+.sala-trabajo {
+  grid-area: sala-trabajo;
+}
+
+.sala-lectura {
+  grid-area: sala-lectura;
+}
+
+.juegos-exterior {
+  grid-area: juegos-exterior;
+}
+
 /* Footer */
 .footer-container {
   display: flex;

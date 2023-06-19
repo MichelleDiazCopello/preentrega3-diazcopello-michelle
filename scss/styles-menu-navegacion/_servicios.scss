@@ -1,0 +1,83 @@
+/* Servicios Main */
+
+.serviciosmain {
+    display: grid;
+    section {
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style-type: none;
+                margin: 15px 0;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    // img {
+                    //     margin-top: 15px;
+                    //     width: 75%;
+                    // }
+                    p {
+                        padding: 10px 10px 0 10px;
+                        margin-bottom: 0;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Medias Queries Servicios Main */
+
+@media (min-width: 768px) {
+    .serviciosmain {
+        display: flex;
+        flex-direction: column;
+        section {
+            display: flex;
+            flex-direction: column;
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                li {
+                    div {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    // .serviciosmain__ul {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     grid-template-rows: 1fr 1fr;
+    //     grid-template-areas:    "sala-juegos sala-trabajo"
+    //                             "sala-lectura juegos-exterior";
+    // }
+}
+
+/* Grid Areas Servicios Main*/
+
+.sala-juegos-infantiles {
+    grid-area: sala-juegos;
+}
+
+.sala-trabajo {
+    grid-area: sala-trabajo;
+}
+
+.sala-lectura {
+    grid-area: sala-lectura;
+}
+
+.juegos-exterior {
+    grid-area: juegos-exterior;
+}
