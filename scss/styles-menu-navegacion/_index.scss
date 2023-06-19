@@ -1,0 +1,55 @@
+/* Main Index */
+
+.indexmain {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1em;
+    .indexmain__section--information{
+        display: grid;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        color: white;
+        align-self: flex-end;
+        margin-bottom: 2em;
+        font-size: 70%;
+        p {
+            margin-bottom: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        }
+    }
+    
+    .indexmain__section--description {
+        margin:0 1em 2em 1em;
+        article {
+            text-align: justify;
+        }
+        h2 {
+            text-align: left;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+/* Medias Queries Index Main */
+
+@media (min-width: 768px){
+    .indexmain__div--information {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        color: white;
+        align-self: flex-end;
+        margin-bottom: 3em;
+        margin-left: 3em;
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "preentrega3-diazcopellomichelle",
+  "version": "1.0.0",
+  "description": "preentrega 3 - Diaz Copello Michelle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michelle Diaz Copello",
+  "license": "ISC"
+}

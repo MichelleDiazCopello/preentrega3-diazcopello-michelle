@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar - Complejo Los Palmares</title>
+
+    <link rel="shortcut icon" href="../media/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header> <!-- Encabezado de la página -->
+        <section class="header__section--reservar">
+            <!-- Menú de navegación -->
+                <ul class="section__li--inicio">
+                    <li><a href="../index.html">Inicio</a></li>
+                </ul>
+                <ul class="section__li--ofertas">
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                </ul>
+                <ul class="section__li--unidades">
+                    <li><a href="unidades.html">Unidades</a></li>
+                </ul>
+                <ul class="section__li--servicios">
+                    <li><a href="servicios.html">Servicios</a></li>
+                </ul>
+                <ul class="html-reservar__section--reservar">
+                    <li><span>Reservar</span></li>
+                </ul>
+            
+            <!-- Imagen Logotipo de la empresa -->
+            <img class="img-header" src="../media/logo.png" alt="Complejo Los Palmares Logo" width="300px" height="120px">
+        </section>
+    </header>
+
+    
+    <main class="reservarmain"> <!-- Información de Contacto -->
+        <div class="reservarmain__contact-information">
+            <section>
+                    <p class="reservarmain__p--title">Contacto</p>
+                    <p class="reservarmain__p--description"><strong>Contáctenos</strong> para conocer todas las opciones que tenemos para ofrecerle y las modalidades de reserva. Estamos para responder sus dudas y brindarle la mejor atención.</p>
+            </section>
+            <section>
+                    <ul>
+                        <li>
+                            <span>Correo Electrónico:</span>
+                            <a href="mailto:cabaniaslospalmares@gmail.com" title="Correo Electrónico">cabaniaslospalmares@gmail.com</a>
+                        </li>
+                        <li>
+                            <span>Teléfono:</span>
+                            <a href="tel:+5493541232396">3541 23-2396</a>
+                            <span>También disponible <a href="https://wa.link/g9ne08">WhatsApp</a></span>
+                        </li> 
+                        <li>
+                            <span>Dirección:</span>
+                            <a href="../index.html#maps">La Pasionaria 1735 - Villa Parque Síquiman - Córdoba - Argentina</a>
+                        </li>
+                    </ul>
+            </section>
+        </div>
+
+        <section class="reservarmain__section--form">
+            <form class="reservarmain__form" action="" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="reservarmain__form--div">
+                    <label class="reservarmain__form--nombre" for="Nombre">Nombre y Apellido
+                        <input type="text" name="Nombre" id="Nombre" placeholder="Tu nombre y tu Apellido"></label>
+                    <label class="reservarmain__form--email" for="Email">Email
+                        <input type="email" name="Email" id="Email" placeholder="nombre@ejemplo.com"></label>
+                    <label class="reservarmain__form--celular" for="Celular">Celular
+                        <input type="tel" name="Celular" id="Celular" placeholder="+54 9 351 999-9999"></label>
+                    <label class="reservarmain__form--cantidad" for="Cantidad de Personas">Cantidad de Personas
+                        <input type="number" name="Cantidad de Personas" id="Cantidad de Personas"></label>
+                    <label class="reservarmain__form--grupo" for="Tipo de Grupo">Tipo de Grupo
+                        <div>
+                        <input type="radio" name="Tipo de Grupo" value="Familiar">Familiar
+                        <input type="radio" name="Tipo de Grupo" value="Amigos">Amigos
+                        </div>
+                    </label>
+                    <label class="reservarmain__form--f.ingreso" for="Fecha de Ingreso">Fecha de Ingreso
+                        <input type="date" name="Fecha de Ingreso" id="Fecha de Ingreso"></label>
+                    <label class="reservarmain__form--f.salida" for="Fecha de Salida">Fecha de Salida
+                        <input type="date" name="Fecha de Salida" id="Fecha de Salida"></label>
+                    <label class="reservarmain__form--peticiones" for="Datos y Peticiones Adicionales">Datos y Peticiones Adicionales
+                        <textarea name="Datos y Peticiones Adicionales" id="Datos y Peticiones Adicionales" cols="30" rows="10"></textarea></label>
+                    <div class="reservarmain__form--checkboxs checkboxs-terms">
+                        <input type="checkbox" name="Terms&Conditions" id="Terms&Conditions"> He leído y acepto los Términos y Condiciones para reservar en este alojamiento.
+                    </div>
+                    <div class="reservarmain__form--checkboxs checkboxs-autoriced">
+                        <input type="checkbox" name="autoriced" id="autoriced"> Autorizo a Complejo Los Palmares a enviarme comunicaciones sobre ofertas y disponibilidades del alojamiento.
+                    </div>
+                    <label class="reservarmain__form--b.enviar" for="Enviar">
+                        <input type="submit" value="Enviar"></label>
+                    <label class="reservarmain__form--b.limpiar" for="Limpiar Formulario"><input type="reset" value="Limpiar Formulario"></label>
+                </div>
+            </form>
+        </section>
+       </main>
+
+    <footer class="footer-container"> <!-- Pie de Página -->
+        <div class="footer__div--container"> <!-- Contenedor de los bloques internos del pie de página -->
+            <div class="footer__div--bloque1"> <!-- Bloque 1 del pie de página - Información de Contacto -->
+                <p class="footer__bloque1--title">Complejo Los Palmares</p>
+                <ul>
+                    <li>
+                        <p>Teléfono</p>
+                        <a href="tel:+54 9 3541 23-2396">+54 9 3541 23-2396</a>
+                    </li>
+                    <li>
+                        <p>WhatsApp</p>
+                        <a href="https://wa.link/g9ne08">+54 9 3541 23-2396</a>
+                    </li>
+                    <li>
+                        <p>Ubicación</p>
+                        <a href="https://goo.gl/maps/vZAxzWz28oaCdboi8" class="footer__li--direction">La Pasionaria 1735 - Villa Parque Síquiman - Córdoba - Argentina</a>
+                    </li>
+                    <li>
+                        <p>Correo Electrónico</p>
+                        <a href="mailto:cabaniaslospalmares@gmail.com">cabaniaslospalmares@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div> <!-- Bloque 2 del pie de página - Logotipo de la empresa -->
+                <img class="footerlogo" src="../media/logo.png" alt="Complejo Los Palmares Logo" width="300px" height="120px">
+            </div>
+            <div> <!-- Bloque 3 del pie de página - Mapa interactivo con la ubicación de la empresa -->
+                <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.905085958769!2d-64.48128692524816!3d-31.361598293603343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d644cca1e58b9%3A0x1d246c6cacf33fa3!2sLos%20Palmares!5e0!3m2!1ses-419!2sar!4v1683259956452!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complejo Los Palmares</title>
+
+    <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header> <!-- Encabezado de la página -->
+
+        <section>
+            <!-- Menú de navegación -->
+                <ul class="section__li--inicio">
+                    <li><span>Inicio</span>
+                </ul>
+                <ul class="section__li--ofertas">
+                    <li><a href="menu-navegacion/ofertas.html">Ofertas</a></li>
+                </ul>
+                <ul class="section__li--unidades">
+                    <li><a href="menu-navegacion/unidades.html">Unidades</a></li>
+                </ul>
+                <ul class="section__li--servicios">
+                    <li><a href="menu-navegacion/servicios.html">Servicios</a></li>
+                </ul>
+                <ul class="section__li--reservar">
+                    <li><a href="menu-navegacion/reservar.html">Reservar</a></li>
+                </ul>
+            
+            <!-- Imagen Logotipo de la empresa -->
+            <img class="img-header" src="media/logo.png" alt="Complejo Los Palmares Logo" width="300px" height="120px">
+        </section>
+
+        <form class="header-form" action="" method="post" enctype="application/x-www-form-urlencoded"> <!-- Formulario Consulta de Disponibilidad --> 
+            <!-- Bloque 1 - Ingreso -->
+            <div id="check-in">
+                <label for="Fecha de Ingreso">Fecha de Ingreso</label>
+                <input type="date" name="Fecha de Ingreso" id="Fecha de Ingreso">
+            </div>
+            <!-- Bloque 2 - Salida -->
+            <div id="check-out">
+                <label for="Fecha de Salida">Fecha de Salida</label>
+                <input type="date" name="Fecha de Salida" id="Fecha de Salida">
+            </div>
+            <!-- Bloque 3 - Cantidad de Personas -->
+            <div id="peoples">
+                <label for="Cantidad de Personas">Cantidad de Personas</label>
+                <input type="number" name="Cantidad de Personas" id="Cantidad de Personas">
+            </div>
+            <!-- Bloque 4 - Botón Consultar -->
+            <div class="header__form--boton">
+                <input id="boton-consultar" type="submit" value="Consultar">
+            </div>
+        </form>
+    </header>
+
+    <main class="indexmain">
+        <section class="indexmain__section--information">
+            <img src="Media/101699503_1475821502619581_3355901322686627840_o.jpg" alt="Vista Panorámica del Lago">
+        
+            <div class="indexmain__div--information"> 
+                <!-- Información fija sobre las imágenes cambiantes -->
+                <h1>Complejo Los Palmares</h1>
+                <p>Teléfono</p>
+                <a href="tel:+54 9 3541 23-2396">+54 9 3541 23-2396</a>
+            </div> <br>
+        </section>
+
+        <section class="indexmain__section--description">
+            <!-- Información / Descripción de la empresa -->
+            <article> 
+                <h2>Conozca Complejo Los Palmares</h2>
+                <p>Con una ubicación privilegiada, inmerso en la naturaleza serrana cordobesa y rodeado a su vez de puntos turísticos importantes, el Complejo Los Palmares cuenta con 11 viviendas de distintos tamaños, variando entre una, dos y tres habitaciones, todas ellas con vistas al lago, a las sierras y a la hermosa Ciudad de Villa Carlos Paz.</p>
+                <p>Equipadas totalmente con sommier, Smart TV, aire frío-calor, refrigerador con freezer, sofá-cama, Wi-Fi, vajilla y todo lo necesario para sentirte como en la calidez de tu hogar</p>
+                <p>En el exterior podrás disfrutar de una piscina y un solárium, ambos con vista directa al lago, como así también de un amplio parque serrano, pudiendo visualizar especies de vida silvestre de flora y fauna.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer-container"> <!-- Pie de Página -->
+        <div class="footer__div--container"> <!-- Contenedor de los bloques internos del pie de página -->
+            <div class="footer__div--bloque1"> <!-- Bloque 1 del pie de página - Información de Contacto -->
+                <p class="footer__bloque1--title">Complejo Los Palmares</p>
+                <ul>
+                    <li>
+                        <p>Teléfono</p>
+                        <a href="tel:+54 9 3541 23-2396">+54 9 3541 23-2396</a>
+                    </li>
+                    <li>
+                        <p>WhatsApp</p>
+                        <a href="https://wa.link/g9ne08">+54 9 3541 23-2396</a>
+                    </li>
+                    <li>
+                        <p>Ubicación</p>
+                        <a href="https://goo.gl/maps/vZAxzWz28oaCdboi8" class="footer__li--direction">La Pasionaria 1735 - Villa Parque Síquiman - Córdoba - Argentina</a>
+                    </li>
+                    <li>
+                        <p>Correo Electrónico</p>
+                        <a href="mailto:cabaniaslospalmares@gmail.com">cabaniaslospalmares@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div> <!-- Bloque 2 del pie de página - Logotipo de la empresa -->
+                <img class="footerlogo" src="media/logo.png" alt="Complejo Los Palmares Logo" width="300px" height="120px">
+            </div>
+            <div> <!-- Bloque 3 del pie de página - Mapa interactivo con la ubicación de la empresa -->
+                <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.905085958769!2d-64.48128692524816!3d-31.361598293603343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d644cca1e58b9%3A0x1d246c6cacf33fa3!2sLos%20Palmares!5e0!3m2!1ses-419!2sar!4v1683259956452!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

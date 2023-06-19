@@ -1,0 +1,69 @@
+/* Ofertas Main */
+.ofertasmain {
+    display: grid;
+    .ofertasmain__a--2x1 {
+        text-decoration: none;
+        color: black;
+        margin: 1em;
+        border-style: solid;
+        border-width: thin;
+    }
+    .ofertasmain__a--30off {
+        text-decoration: none;
+        color: black;
+        margin: 1em;
+        border-style: solid;
+        border-width: thin;
+    }
+    a div{
+        padding: 5% 5% 2% 5%;
+        img{
+            width: 100%;
+        }
+        span {
+            font-size: 100%;
+            font-weight: 600;
+        }
+        p {
+            font-size: 70%;
+            margin: 0;
+        }
+    }  
+}
+
+/* Grid Areas Ofertas Main */
+
+.ofertasmain__a--2x1 {
+    grid-area: 2x1;
+}
+
+.ofertasmain__a--30off {
+    grid-area: 30off;
+}
+
+/* Medias Queries Ofertas Main */
+
+@media (min-width: 768px){
+    .ofertasmain {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "2x1 30off";
+        a {
+            text-decoration: none;
+            color: black;
+            margin: 1em;
+            border-style: solid;
+            border-width: thin;
+            .div--2x1 {
+                padding: 5% 5% 2% 5%;
+                div span {
+                    font-size: 100%;
+                    font-weight: 600;
+                }
+                div p {
+                    font-size: 70%;
+                    margin: 0;
+                }
+            }        
+        }
+    }
+}
