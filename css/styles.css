@@ -10,14 +10,12 @@ header {
   top: 0;
   z-index: 2;
 }
-header section {
-  display: grid;
-  margin: 0 0 10px 0;
-  justify-items: center;
-  align-items: center;
-  row-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "imagen imagen imagen imagen imagen" "inicio ofertas reservar unidades servicios";
+header section .div--img-smallheader {
+  display: flex;
+  justify-content: center;
+}
+header section .navbar {
+  position: sticky;
 }
 header section ul {
   display: flex;
@@ -81,7 +79,13 @@ header section img {
   header {
     position: sticky;
   }
-  header section {
+  header .navbar {
+    display: none;
+  }
+  header .img-smallheader {
+    display: none;
+  }
+  header .header__navigation--portatil {
     display: grid;
     margin-bottom: 5px;
     justify-items: center;
@@ -91,6 +95,11 @@ header section img {
     grid-template-areas: "inicio ofertas imagen unidades servicios";
   }
   .section__li--reservar {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .header__navigation--portatil {
     display: none;
   }
 }

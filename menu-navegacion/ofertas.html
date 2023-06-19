@@ -17,12 +17,47 @@
     <header> <!-- Encabezado de la página -->
 
         <section>
+            <!-- Imagen Logotipo de la empresa -->
+            <div class="div--img-smallheader">
+                <img class="img-smallheader" src="../media/logo.png" alt="Complejo Los Palmares Logo" width="300px" height="120px">
+            </div>
+
             <!-- Menú de navegación -->
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="section__li--inicio">
+                            <li><a href="../index.html">Inicio</a></li>
+                        </ul>
+                        <ul class="section__li--unidades">
+                            <li><a href="unidades.html">Unidades</a></li>
+                        </ul>
+                        <ul class="section__li--servicios">
+                            <li><a href="servicios.html">Servicios</a></li>
+                        </ul>
+                        <ul class="section__li--reservar">
+                            <li><a href="reservar.html">Reservar</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </nav>
+
+            <div class="header__navigation--portatil"> <!-- Menú de Navegación para grandes pantallas -->
                 <ul class="section__li--inicio">
                     <li><a href="../index.html">Inicio</a></li>
                 </ul>
                 <ul class="section__li--ofertas">
-                    <li><span>Ofertas</span></li>
+                    <li><span>Ofertas</span></a></li>
                 </ul>
                 <ul class="section__li--unidades">
                     <li><a href="unidades.html">Unidades</a></li>
@@ -33,9 +68,11 @@
                 <ul class="section__li--reservar">
                     <li><a href="reservar.html">Reservar</a></li>
                 </ul>
-            
-            <!-- Imagen Logotipo de la empresa -->
-            <img class="img-header" src="../media/logo.png" alt="Complejo Los Palmares Logo" width="300px" height="120px">
+                <!-- Imagen Logotipo de la empresa -->
+                <img class="img-header" src="../media/logo.png" alt="Complejo Los Palmares Logo" width="300px" height="120px">
+
+            </div>
+
         </section>
 
         <form class="header-form" action="" method="post" enctype="application/x-www-form-urlencoded"> <!-- Formulario Consulta de Disponibilidad --> 
