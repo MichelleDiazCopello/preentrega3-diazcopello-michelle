@@ -99,15 +99,39 @@
     </header>
 
     <main class="indexmain">
-        <section class="indexmain__section--information">
-            <img src="Media/101699503_1475821502619581_3355901322686627840_o.jpg" alt="Vista Panorámica del Lago">
-        
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="media/paisaje1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="media/paisaje2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="media/paisaje3.jpg" class="d-block w-100 paisaje3" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="indexmain__section--information">                    
             <div class="indexmain__div--information"> 
                 <!-- Información fija sobre las imágenes cambiantes -->
-                <h1>Complejo Los Palmares</h1>
-                <p>Teléfono</p>
-                <a href="tel:+54 9 3541 23-2396">+54 9 3541 23-2396</a>
-            </div> <br>
+                <h1 class="fs-1">Complejo Los Palmares</h1>
+                <p class="fs-3">Teléfono</p>
+                <a class="fs-5" href="tel:+54 9 3541 23-2396">+54 9 3541 23-2396</a>
+            </div>
         </section>
 
         <section class="indexmain__section--description">
