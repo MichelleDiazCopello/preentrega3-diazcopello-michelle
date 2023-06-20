@@ -21,8 +21,7 @@
             padding: 2% 0;
         }
         section ul li a {
-            text-decoration: none;
-            color: black;
+            @include link-none-black;
         }
     }
     .reservarmain__section--form {

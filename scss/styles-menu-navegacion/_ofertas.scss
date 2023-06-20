@@ -2,15 +2,13 @@
 .ofertasmain {
     display: grid;
     .ofertasmain__a--2x1 {
-        text-decoration: none;
-        color: black;
+        @include link-none-black;
         margin: 1em;
         border-style: solid;
         border-width: thin;
     }
     .ofertasmain__a--30off {
-        text-decoration: none;
-        color: black;
+        @include link-none-black;
         margin: 1em;
         border-style: solid;
         border-width: thin;
@@ -48,8 +46,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "2x1 30off";
         a {
-            text-decoration: none;
-            color: black;
+            @include link-none-black;
             margin: 1em;
             border-style: solid;
             border-width: thin;
