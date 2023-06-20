@@ -18,10 +18,6 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    // img {
-                    //     margin-top: 15px;
-                    //     width: 75%;
-                    // }
                     p {
                         padding: 10px 10px 0 10px;
                         margin-bottom: 0;
@@ -55,29 +51,4 @@
             }
         }
     }
-    // .serviciosmain__ul {
-    //     display: grid;
-    //     grid-template-columns: 1fr 1fr;
-    //     grid-template-rows: 1fr 1fr;
-    //     grid-template-areas:    "sala-juegos sala-trabajo"
-    //                             "sala-lectura juegos-exterior";
-    // }
-}
-
-/* Grid Areas Servicios Main*/
-
-.sala-juegos-infantiles {
-    grid-area: sala-juegos;
-}
-
-.sala-trabajo {
-    grid-area: sala-trabajo;
-}
-
-.sala-lectura {
-    grid-area: sala-lectura;
-}
-
-.juegos-exterior {
-    grid-area: juegos-exterior;
 }

@@ -1,0 +1,36 @@
+.unidadesmain {
+    display: grid;
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style-type: none;
+                margin: 15px 0;
+            }
+        }
+    }
+
+/* Medias Queries Unidades Main */
+
+@media (min-width: 768px) {
+    .unidadesmain {
+        display: flex;
+        flex-direction: column;
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                li {
+                    div {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }

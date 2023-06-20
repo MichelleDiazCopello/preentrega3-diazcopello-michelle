@@ -379,23 +379,39 @@ header section img {
     height: 100%;
   }
 }
-/* Grid Areas Servicios Main*/
-.sala-juegos-infantiles {
-  grid-area: sala-juegos;
+.unidadesmain {
+  display: grid;
+}
+.unidadesmain ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.unidadesmain ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin: 15px 0;
 }
 
-.sala-trabajo {
-  grid-area: sala-trabajo;
+/* Medias Queries Unidades Main */
+@media (min-width: 768px) {
+  .unidadesmain {
+    display: flex;
+    flex-direction: column;
+  }
+  .unidadesmain ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .unidadesmain ul li div {
+    height: 100%;
+  }
 }
-
-.sala-lectura {
-  grid-area: sala-lectura;
-}
-
-.juegos-exterior {
-  grid-area: juegos-exterior;
-}
-
 /* Footer */
 .footer-container {
   display: flex;
